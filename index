@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <title>CENTRO DE COBRANZAS - EL CHAPACO</title>
+</head>
+<body>
+ 
+  <div class="row" id="contenedor">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CENTRO DE COBRANZAS - EL CHAPACO</a>
+    </div>
+</nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   <div class="col-xs-4 col-sm-4 col-md-4">
+     </div>
+  <div class="col-xs-4 col-sm-4 col-md-4">
+    <center>
+    <img src="http://giancarlopaternoster.com/images/loading-wheel.gif" width="80%" height="80%" aligh="middle">
+</div>
+  <div class="col-xs-4 col-sm-4 col-md-4">
+    </div>
+</div>
+</div>
+ 
+           
+    
+    
+<script id="jsbin-javascript">
+var d, h, m, s, color;
+function tiempo() {
+	d = new Date();
+	h = d.getHours();
+	m = d.getMinutes();
+	s = d.getSeconds();
+	
+	//agregar 0 a las horas menos a 10
+	if(h <= 9) h = '0'+h;
+	if(m <= 9) m = '0'+m;
+	if(s <= 9) s = '0'+s;
+	
+	color = "#"+h+(m+5)+s;
+     
+        //color al fondo
+	    document.body.style.background = color;
+	//repetir cada medio segundo
+	setTimeout(tiempo, 1000);
+}
+
+var pagina="http://google.com.bo";
+function redireccionar(){
+  location.href=pagina;
+}
+window.onload = tiempo();
+setTimeout("redireccionar()", 5000);
+</script>
+ 
+ 
+ 
+<script id="jsbin-source-javascript" type="text/javascript">var d, h, m, s, color;
+function tiempo() {
+	d = new Date();
+	h = d.getHours();
+	m = d.getMinutes();
+	s = d.getSeconds();
+	
+	//agregar 0 a las horas menos a 10
+	if(h <= 9) h = '0'+h;
+	if(m <= 9) m = '0'+m;
+	if(s <= 9) s = '0'+s;
+	
+	color = "#"+h+(m+5)+s;
+     
+        //color al fondo
+	    document.body.style.background = color;
+	//repetir cada medio segundo
+	setTimeout(tiempo, 1000);
+}
+
+var pagina="http://google.com.bo";
+function redireccionar(){
+  location.href=pagina;
+}
+window.onload = tiempo();
+setTimeout("redireccionar()", 5000);
+</script></body>
+</html>

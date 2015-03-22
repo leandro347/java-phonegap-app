@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <title>INICIO</title>
+  <title>JS Bin</title>
+</head>
+<body>
+  <center>
+    <div class="row" id="contenedor">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CENTRO DE COBRANZAS - EL CHAPACO</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reg_cli.html">Registrar Clientes</a></li>
+            <li><a href="aum_sald.html">Aumentar Saldos</a></li>
+            <li><a href="lista.html">Lista de Clientes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+<button type="submit" class="btn btn-success btn-lg" onclick=" location.href='reg_cli.html'">REGISTRAR CLIENTES</button>
+<br>
+<br>
+<button type="submit" class="btn btn-success btn-lg" onclick=" location.href='aum_sald.html'">AUMENTAR SALDOS</button>
+<br>
+<br>
+    <button type="submit" class="btn btn-info btn-lg" onclick=" location.href='lista.html'">LISTA DE CLIENTES</button>
+    
+ 
+ 
+ 
+</body>
+</html>

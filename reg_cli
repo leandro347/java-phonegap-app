@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <title>REGISTRO CLIENTE</title>
+  <title>JS Bin</title>
+</head>
+<body>
+  <center>
+    <div class="row" id="contenedor">
+  <div class="col-xs-12 col-sm-12 col-md-12">
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CENTRO DE COBRANZAS - EL CHAPACO</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reg_cli.html">Registrar Clientes</a></li>
+            <li><a href="aum_sald.html">Aumentar Saldos</a></li>
+            <li><a href="lista.html">Lista de Clientes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+<form method="POST" onsubmit="return validar()">
+<div class="container" >
+  <h2>DATOS DE CLIENTE</h2>
+  <p>Complete el registro con todos los datos que se piden:</p>
+  </center>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Nombre</span>
+  <input type="text" class="form-control" placeholder="Ayrton" aria-describedby="basic-addon1" id="nombre">
+</div>
+    <br>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Dirección</span>
+  <input type="text" class="form-control" placeholder="Sucre  y Oquendo" aria-describedby="basic-addon1" id="direccion">
+</div>
+    <br>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Carnet de Identidad</span>
+  <input type="text" class="form-control" placeholder="Solo 8 digitos" aria-describedby="basic-addon1" id="carnet">
+</div>
+        <br>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Telefono</span>
+  <input type="text" class="form-control" placeholder="Solo 8 digitos" aria-describedby="basic-addon1" id="telefono">
+</div>
+    <br>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Foto</span>
+  <input id="file-1" type="file" class="file" multiple=true data-preview-file-type="any">
+</div>
+</div>
+   <center>
+<button type="submit" class="btn btn-info " onclick=" location.href='lista.html'">REGISTRAR</button>
+</form>
+<script id="jsbin-javascript">
+function validar()
+{
+  var nombre = document.getElementById("nombre").value;
+  var carnet = document.getElementById("carnet").value;
+  var celular = document.getElementById("telefono").value;
+  var direccion = document.getElementById("direccion").value;
+  
+  if( nombre === null || nombre.length === 0 || /^\s+$/.test(nombre) ) //nombre
+    {
+      alert("Debe colocar un nombre");
+      return false;
+    }
+  if( carnet === null || carnet.length === 0 || !(/^\d{8}$/.test(carnet)) ) //carnet
+    {
+      alert("El carnet no tiene 8 digitos");
+      return false;
+    }
+  if( celular === null || celular.length === 0 || !(/^\d{8}$/.test(celular)) ) //celular
+    {
+      alert("El Telefono no tiene 8 digitos");
+      return false;
+    }
+  if( direccion === null || direccion.length === 0 || /^\s+$/.test(direccion) ) //direccion
+    {
+      alert("La direccion no puede estar vacia");
+      return false;
+    }
+}
+</script>
+ 
+ 
+ 
+<script id="jsbin-source-javascript" type="text/javascript">function validar()
+{
+  var nombre = document.getElementById("nombre").value;
+  var carnet = document.getElementById("carnet").value;
+  var celular = document.getElementById("telefono").value;
+  var direccion = document.getElementById("direccion").value;
+  
+  if( nombre === null || nombre.length === 0 || /^\s+$/.test(nombre) ) //nombre
+    {
+      alert("Debe colocar un nombre");
+      return false;
+    }
+  if( carnet === null || carnet.length === 0 || !(/^\d{8}$/.test(carnet)) ) //carnet
+    {
+      alert("El carnet no tiene 8 digitos");
+      return false;
+    }
+  if( celular === null || celular.length === 0 || !(/^\d{8}$/.test(celular)) ) //celular
+    {
+      alert("El Telefono no tiene 8 digitos");
+      return false;
+    }
+  if( direccion === null || direccion.length === 0 || /^\s+$/.test(direccion) ) //direccion
+    {
+      alert("La direccion no puede estar vacia");
+      return false;
+    }
+}</script></body>
+</html>
